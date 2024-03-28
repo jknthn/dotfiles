@@ -4,4 +4,14 @@ echo 'if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi' >> ~/.bash_profile
 
-echo 'git clone git@github.com:kpaks/secret-dotfiles.git ~/.dotfiles/secret-dotfiles' >> ~/.bashrc
+sym() {
+    dotdir="$1"
+
+    for filename in $(find $dotdir -name "*.symlink"); do
+      ln -sf $filename ~/.$(basename $filename | sed "s/\.symlink//")
+    done
+}
+
+dotfs=$(cd $(dirname $0) && pwd)
+
+sym "$dotfs"

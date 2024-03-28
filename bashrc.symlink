@@ -1,0 +1,4 @@
+DIRECTORY=~/.dotfiles/secret-dotfiles
+if [ ! -d "$DIRECTORY" ]; then
+  git clone git@github.com:kpaks/secret-dotfiles.git ~/.dotfiles/secret-dotfiles
+fi
