@@ -9,6 +9,7 @@ if [ ! -d "PYTEST_ENV_DIR" ]; then
   pyenv local 3.9
   python -m pip install poetry
   python -m poetry install
+  cd -
 fi
 
 source ~/.dotfiles/b2b-devtools/mysql-utils.sh
