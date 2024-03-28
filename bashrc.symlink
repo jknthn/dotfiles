@@ -2,3 +2,7 @@ DIRECTORY=~/.dotfiles/secret-dotfiles
 if [ ! -d "$DIRECTORY" ]; then
   git clone git@github.com:kpaks/secret-dotfiles.git ~/.dotfiles/secret-dotfiles
 fi
+
+source ~/.dotfiles/secret-dotfiles/mysql-utils.sh
+source ~/.dotfiles/secret-dotfiles/kubectl-utils.sh
+source ~/.dotfiles/secret-dotfiles/mordor-utils.sh
