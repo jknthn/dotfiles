@@ -1,4 +1,4 @@
-DIRECTORY=~/.dotfiles/secret-dotfiles
+DIRECTORY=~/.dotfiles/b2b-devtools
 if [ ! -d "$DIRECTORY" ]; then
   git clone git@github.com:Affirm/b2b-devtools.git ~/.dotfiles/b2b-devtools
 fi
