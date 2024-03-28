@@ -1,15 +1,18 @@
 DIRECTORY=~/.dotfiles/b2b-devtools
 if [ ! -d "$DIRECTORY" ]; then
   git clone git@github.com:Affirm/b2b-devtools.git ~/.dotfiles/b2b-devtools
+  echo "b2b-devtools cloned successfully"
 fi
 
 PYTEST_ENV_DIR=~/all-the-things/test_framework/tests/e2e/.venv
 if [ ! -d "PYTEST_ENV_DIR" ]; then
+  echo "creating pytest env"
   cd ~/all-the-things/test_framework/tests/e2e
   pyenv local 3.9
   python -m pip install poetry
   python -m poetry install
   cd -
+  echo "pytest env created successfully"
 fi
 
 source ~/.dotfiles/b2b-devtools/mysql-utils.sh
