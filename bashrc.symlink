@@ -3,7 +3,7 @@ if [ ! -d "$DIRECTORY" ]; then
   git clone git@github.com:Affirm/b2b-devtools.git ~/.dotfiles/b2b-devtools
 fi
 
-PYTEST_ENV_DIR=test_framework/tests/e2e/.venv
+PYTEST_ENV_DIR=~/all-the-things/test_framework/tests/e2e/.venv
 if [ ! -d "PYTEST_ENV_DIR" ]; then
   cd ~/all-the-thing/test_framework/tests/e2e
   pyenv local 3.9
