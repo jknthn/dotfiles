@@ -5,7 +5,7 @@ if [ ! -d "$DIRECTORY" ]; then
 fi
 
 PYTEST_ENV_DIR=~/all-the-things/test_framework/tests/e2e/.venv
-if [ ! -d "PYTEST_ENV_DIR" ]; then
+if [ ! -d "$PYTEST_ENV_DIR" ]; then
   echo "creating pytest env"
   cd ~/all-the-things/test_framework/tests/e2e
   pyenv local 3.9
