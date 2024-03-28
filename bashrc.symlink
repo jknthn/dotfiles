@@ -5,13 +5,11 @@ fi
 
 PYTEST_ENV_DIR=~/all-the-things/test_framework/tests/e2e/.venv
 if [ ! -d "PYTEST_ENV_DIR" ]; then
-  cd ~/all-the-thing/test_framework/tests/e2e
+  cd ~/all-the-things/test_framework/tests/e2e
   pyenv local 3.9
   python -m pip install poetry
   python -m poetry install
 fi
-
-alias pytest_py=~/all-the-things/test_framework/tests/e2e/.venv/bin/python3
 
 source ~/.dotfiles/b2b-devtools/mysql-utils.sh
 source ~/.dotfiles/b2b-devtools/kubectl-utils.sh
