@@ -19,4 +19,5 @@ source ~/.dotfiles/b2b-devtools/mysql-utils.sh
 source ~/.dotfiles/b2b-devtools/kubectl-utils.sh
 source ~/.dotfiles/b2b-devtools/mordor-utils.sh
 source ~/.dotfiles/b2b-devtools/user-utils.sh
+source ~/.dotfiles/b2b-devtools/help.sh
 
